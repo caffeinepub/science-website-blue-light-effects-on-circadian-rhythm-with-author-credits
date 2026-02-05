@@ -1,0 +1,12 @@
+{
+  "frontend/src/App.tsx": "Main application component rendering a single-page science education website about blue light and circadian rhythm with hero section, six content sections (what is blue light, circadian rhythm, mechanisms, evidence, strategies, cautions), references, and footer with author credits.",
+  "frontend/src/components/TopNav.tsx": "Sticky navigation header with smooth scroll-to-section functionality, responsive mobile sheet menu, and visual feedback on scroll.",
+  "frontend/src/components/SiteFooter.tsx": "Footer component displaying site information, author credits (PushpakSaha and Md. Zawraiz Khan), quick links, and caffeine.ai attribution with love icon.",
+  "frontend/src/components/SectionShell.tsx": "Reusable wrapper component providing consistent spacing, max-width container, centered heading, and scroll offset for all major content sections.",
+  "frontend/src/components/CalloutCard.tsx": "Reusable card component for highlighting key information with variant styles (default, info, science, warning) and corresponding icons and border colors.",
+  "frontend/src/components/DisclaimerBanner.tsx": "Prominent alert component displaying medical disclaimer and important considerations about individual variability and the need for professional guidance.",
+  "frontend/src/content/blueLightCircadianContent.ts": "Centralized content data structure containing all educational copy, section titles, definitions, explanations, and bullet lists for the blue light science website.",
+  "frontend/src/content/references.ts": "Structured reference data with titles, sources, and URLs for credible scientific and medical institutions supporting the educational content.",
+  "frontend/src/index.css": "Global styles with custom OKLCH color system using warm neutrals, amber primary, and emerald accents for a distinctive science-education aesthetic in both light and dark modes, with typography enhancements and smooth scrolling.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the theme with custom font families, enhanced typography plugin settings, and additional border radius utilities to support the warm, professional design system."
+}

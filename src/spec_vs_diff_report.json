@@ -1,0 +1,50 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-05T01:33:17.056Z",
+  "summary": "Diff adds a single-page frontend with top navigation, multiple science content sections, references data, a disclaimer banner, and a footer that credits the requested authors. It also introduces Internet Identity/auth-related hooks and provider wiring, and references one required hero image asset path. However, the diff does not show the required generated image files under frontend/public/assets/generated nor usage of the other two required images.",
+  "missing_requirements": [
+    {
+      "id": "REQ-7",
+      "requirement": "Generate and include static visual assets stored under frontend/public/assets/generated, and render them in relevant sections (hero illustration, melatonin pathway infographic, and icons set).",
+      "reason": "The code references the hero image path, but the diff does not include any added files under frontend/public/assets/generated, nor does it show rendering of the melatonin pathway infographic or the icons set.",
+      "evidence": [
+        "frontend/src/App.tsx (references \"/assets/generated/hero-blue-light.dim_1600x700.png\")",
+        "ADDED FILES list does not include any files under frontend/public/assets/generated"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Internet Identity authentication context/provider and actor creation logic (authentication-related infrastructure).",
+      "reason": "BuildRequest explicitly lists user authentication (Internet Identity) as a non-goal, but the diff adds Internet Identity hooks/provider and identity-dependent actor creation.",
+      "evidence": [
+        "frontend/src/hooks/useInternetIdentity.ts",
+        "frontend/src/hooks/useActor.ts",
+        "frontend/src/main.tsx (wraps App with InternetIdentityProvider)"
+      ]
+    }
+  ],
+  "confidence": 0.74,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/CalloutCard.tsx",
+    "frontend/src/components/DisclaimerBanner.tsx",
+    "frontend/src/components/SectionShell.tsx",
+    "frontend/src/components/SiteFooter.tsx",
+    "frontend/src/components/TopNav.tsx",
+    "frontend/src/content/blueLightCircadianContent.ts",
+    "frontend/src/content/references.ts",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

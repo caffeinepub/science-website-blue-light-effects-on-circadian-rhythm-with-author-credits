@@ -1,0 +1,142 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-responsive-science-focused-informational-website-that-explains-the-effects-of-blue-light-on-circadian-rhythm-written-in-clear-english-for-a-general-audience",
+      "featureTitle": "Create a responsive, science-focused informational website that explains the effects of blue light on circadian rhythm, written in clear English for a general audience.",
+      "files": [
+        "frontend/index.html",
+        "frontend/src/App.tsx",
+        "frontend/src/components/CalloutCard.tsx",
+        "frontend/src/components/SectionShell.tsx",
+        "frontend/src/main.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-include-structured-content-sections-covering-1-what-blue-light-is-wavelength-range-and-common-sources-2-how-circadian-rhythm-and-melatonin-work-at-a-high-level-3-mechanisms-of-blue-light-impact-iprgcs-melanopsin-and-alerting-effects-4-evidence-summary-what-research-generally-shows-and-typical-findings-5-practical-mitigation-strategies-evening-lighting-screen-settings-timing-environment-and-6-cautions-limitations-individual-differences-brightness-duration-not-medical-advice",
+      "featureTitle": "Include structured content sections covering: (1) what blue light is (wavelength range and common sources), (2) how circadian rhythm and melatonin work at a high level, (3) mechanisms of blue light impact (ipRGCs/melanopsin and alerting effects), (4) evidence summary (what research generally shows and typical findings), (5) practical mitigation strategies (evening lighting, screen settings, timing, environment), and (6) cautions/limitations (individual differences, brightness/duration, not medical advice).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/DisclaimerBanner.tsx",
+        "frontend/src/content/blueLightCircadianContent.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-clear-author-credit-area-that-attributes-the-site-to-both-names-exactly-as-provided-pushpaksaha-and-md-zawraiz-khan",
+      "featureTitle": "Add a clear author/credit area that attributes the site to both names exactly as provided: \"PushpakSaha\" and \"Md. Zawraiz Khan\".",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/SiteFooter.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-basic-site-navigation-for-a-single-page-experience-scroll-to-sections-or-a-small-set-of-routes-e-g-home-science-tips-references-about-ensuring-users-can-quickly-reach-each-major-section",
+      "featureTitle": "Implement basic site navigation for a single-page experience (scroll-to sections) or a small set of routes (e.g., Home, Science, Tips, References/About), ensuring users can quickly reach each major section.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/TopNav.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-references-section-with-a-short-readable-bibliography-style-list-of-credible-sources-e-g-review-articles-academic-medical-institutions-do-not-claim-or-fabricate-specific-study-outcomes-beyond-the-high-level-summary-presented-on-the-page",
+      "featureTitle": "Add a references section with a short, readable bibliography-style list of credible sources (e.g., review articles, academic/medical institutions). Do not claim or fabricate specific study outcomes beyond the high-level summary presented on the page.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/content/references.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-choose-and-apply-a-coherent-visual-theme-suitable-for-a-science-education-website-color-palette-typography-spacing-and-component-styles-and-enforce-it-consistently-across-all-pages-sections-avoid-defaulting-to-a-blue-purple-theme",
+      "featureTitle": "Choose and apply a coherent visual theme suitable for a science education website (color palette, typography, spacing, and component styles) and enforce it consistently across all pages/sections. Avoid defaulting to a blue/purple theme.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-generate-and-include-static-visual-assets-to-support-the-educational-content-stored-under-frontend-public-assets-generated-and-render-them-in-the-relevant-sections-of-the-site-do-not-serve-images-via-the-backend",
+      "featureTitle": "Generate and include static visual assets to support the educational content, stored under frontend/public/assets/generated, and render them in the relevant sections of the site (do not serve images via the backend).",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

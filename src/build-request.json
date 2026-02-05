@@ -1,0 +1,144 @@
+{
+  "kind": "build_request",
+  "title": "Science website: Blue light effects on circadian rhythm (with author credits)",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a responsive, science-focused informational website that explains the effects of blue light on circadian rhythm, written in clear English for a general audience.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Create a website about science for effects of blue light on circadian rhythm by PushpakSaha\nMd. Zawraiz Khan"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The site loads without errors and renders correctly on mobile and desktop screen sizes.",
+        "All user-facing text is in English and focuses on the science of blue light and circadian rhythm."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Include structured content sections covering: (1) what blue light is (wavelength range and common sources), (2) how circadian rhythm and melatonin work at a high level, (3) mechanisms of blue light impact (ipRGCs/melanopsin and alerting effects), (4) evidence summary (what research generally shows and typical findings), (5) practical mitigation strategies (evening lighting, screen settings, timing, environment), and (6) cautions/limitations (individual differences, brightness/duration, not medical advice).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Create a website about science for effects of blue light on circadian rhythm"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All six content areas are present as clearly labeled sections on the site.",
+        "The content includes at least one short explanation of the biological pathway linking blue light exposure to melatonin/circadian phase effects.",
+        "A limitations/disclaimer section is present and clearly visible."
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Add a clear author/credit area that attributes the site to both names exactly as provided: \"PushpakSaha\" and \"Md. Zawraiz Khan\".",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "by PushpakSaha\nMd. Zawraiz Khan"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The rendered site visibly credits both \"PushpakSaha\" and \"Md. Zawraiz Khan\" (spelled exactly) in a consistent location (e.g., footer and/or About section)."
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Implement basic site navigation for a single-page experience (scroll-to sections) or a small set of routes (e.g., Home, Science, Tips, References/About), ensuring users can quickly reach each major section.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Create a website about science for effects of blue light on circadian rhythm"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users can access each major section from a top navigation element.",
+        "Navigation works without full page reload errors."
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Add a references section with a short, readable bibliography-style list of credible sources (e.g., review articles, academic/medical institutions). Do not claim or fabricate specific study outcomes beyond the high-level summary presented on the page.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "website about science for effects of blue light on circadian rhythm"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A \"References\" (or equivalent) section exists and contains multiple credible sources.",
+        "The site avoids presenting overly specific numerical claims without citation context."
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Choose and apply a coherent visual theme suitable for a science education website (color palette, typography, spacing, and component styles) and enforce it consistently across all pages/sections. Avoid defaulting to a blue/purple theme.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Create a website about science for effects of blue light on circadian rhythm"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The UI has a consistent, intentional visual style across navigation, headings, body text, and callouts.",
+        "The primary theme is not a generic blue/purple gradient look."
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Generate and include static visual assets to support the educational content, stored under frontend/public/assets/generated, and render them in the relevant sections of the site (do not serve images via the backend).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Create a website about science for effects of blue light on circadian rhythm"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Generated images exist in frontend/public/assets/generated and are displayed on the site.",
+        "No backend endpoints are used to fetch or proxy these images."
+      ]
+    }
+  ],
+  "constraints": [
+    "Use English for all user-facing text.",
+    "Do not edit files under frontend/src/components/ui or any other immutablePaths listed in SYSTEM_CONTEXT; compose them instead."
+  ],
+  "nonGoals": [
+    "User authentication (Internet Identity).",
+    "User accounts, comments, or content editing/admin features.",
+    "Real-time features (chat, websockets).",
+    "Integrations with external databases or third-party APIs."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Wide hero illustration showing a stylized human head silhouette with a moon/sleep motif and a screen emitting light (hero-blue-light.dim_1600x700.png)",
+      "Simple infographic illustration showing the pathway from light exposure to brain signaling and melatonin suppression (melatonin-pathway-infographic.dim_1400x900.png)",
+      "Set of three minimal line icons: screen, light bulb, crescent moon (blue-light-icons-set.dim_512x512.png)"
+    ],
+    "edits": []
+  }
+}

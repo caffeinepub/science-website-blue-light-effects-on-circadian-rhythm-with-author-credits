@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Website about the science of blue light effects on circadian rhythm (authored/credited to PushpakSaha and Md. Zawraiz Khan).",
+  "existing_features": [
+    {
+      "id": "feature-create-a-responsive-science-focused-informational-website-that-explains-the-effects-of-blue-light-on-circadian-rhythm-written-in-clear-english-for-a-general-audience",
+      "title": "Create a responsive, science-focused informational website that explains the effects of blue light on circadian rhythm, written in clear English for a general audience.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-include-structured-content-sections-covering-1-what-blue-light-is-wavelength-range-and-common-sources-2-how-circadian-rhythm-and-melatonin-work-at-a-high-level-3-mechanisms-of-blue-light-impact-iprgcs-melanopsin-and-alerting-effects-4-evidence-summary-what-research-generally-shows-and-typical-findings-5-practical-mitigation-strategies-evening-lighting-screen-settings-timing-environment-and-6-cautions-limitations-individual-differences-brightness-duration-not-medical-advice",
+      "title": "Include structured content sections covering: (1) what blue light is (wavelength range and common sources), (2) how circadian rhythm and melatonin work at a high level, (3) mechanisms of blue light impact (ipRGCs/melanopsin and alerting effects), (4) evidence summary (what research generally shows and typical findings), (5) practical mitigation strategies (evening lighting, screen settings, timing, environment), and (6) cautions/limitations (individual differences, brightness/duration, not medical advice).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-clear-author-credit-area-that-attributes-the-site-to-both-names-exactly-as-provided-pushpaksaha-and-md-zawraiz-khan",
+      "title": "Add a clear author/credit area that attributes the site to both names exactly as provided: \"PushpakSaha\" and \"Md. Zawraiz Khan\".",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-basic-site-navigation-for-a-single-page-experience-scroll-to-sections-or-a-small-set-of-routes-e-g-home-science-tips-references-about-ensuring-users-can-quickly-reach-each-major-section",
+      "title": "Implement basic site navigation for a single-page experience (scroll-to sections) or a small set of routes (e.g., Home, Science, Tips, References/About), ensuring users can quickly reach each major section.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-references-section-with-a-short-readable-bibliography-style-list-of-credible-sources-e-g-review-articles-academic-medical-institutions-do-not-claim-or-fabricate-specific-study-outcomes-beyond-the-high-level-summary-presented-on-the-page",
+      "title": "Add a references section with a short, readable bibliography-style list of credible sources (e.g., review articles, academic/medical institutions). Do not claim or fabricate specific study outcomes beyond the high-level summary presented on the page.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-choose-and-apply-a-coherent-visual-theme-suitable-for-a-science-education-website-color-palette-typography-spacing-and-component-styles-and-enforce-it-consistently-across-all-pages-sections-avoid-defaulting-to-a-blue-purple-theme",
+      "title": "Choose and apply a coherent visual theme suitable for a science education website (color palette, typography, spacing, and component styles) and enforce it consistently across all pages/sections. Avoid defaulting to a blue/purple theme.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-and-include-static-visual-assets-to-support-the-educational-content-stored-under-frontend-public-assets-generated-and-render-them-in-the-relevant-sections-of-the-site-do-not-serve-images-via-the-backend",
+      "title": "Generate and include static visual assets to support the educational content, stored under frontend/public/assets/generated, and render them in the relevant sections of the site (do not serve images via the backend).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a science-focused website explaining the effects of blue light on circadian rhythm, including credit to PushpakSaha and Md. Zawraiz Khan.",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Wide hero illustration showing a stylized human head silhouette with a moon/sleep motif and a screen emitting light (hero-blue-light.dim_1600x700.png)\n- Simple infographic illustration showing the pathway from light exposure to brain signaling and melatonin suppression (melatonin-pathway-infographic.dim_1400x900.png)\n- Set of three minimal line icons: screen, light bulb, crescent moon (blue-light-icons-set.dim_512x512.png)",
+  "generatedImages": [
+    {
+      "filename": "hero-blue-light.dim_1600x700.png",
+      "description": "Wide hero illustration showing a stylized human head silhouette with a moon/sleep motif and a screen emitting light",
+      "targetWidth": 1600,
+      "targetHeight": 700
+    },
+    {
+      "filename": "melatonin-pathway-infographic.dim_1400x900.png",
+      "description": "Simple infographic illustration showing the pathway from light exposure to brain signaling and melatonin suppression",
+      "targetWidth": 1400,
+      "targetHeight": 900
+    },
+    {
+      "filename": "blue-light-icons-set.dim_512x512.png",
+      "description": "Set of three minimal line icons: screen, light bulb, crescent moon",
+      "targetWidth": 512,
+      "targetHeight": 512
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Science website: Blue light effects on circadian rhythm (with author credits)",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

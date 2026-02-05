@@ -1,2 +1,3 @@
-# science-website-blue-light-effects-on-circadian-rhythm-with-author-credits
-Exported from Caffeine project: Science website: Blue light effects on circadian rhythm (with author credits)
+## Science website: Blue light effects on circadian rhythm (with author credits)
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

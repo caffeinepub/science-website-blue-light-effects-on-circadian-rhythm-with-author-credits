@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.625rem;
+        
+        /* Warm neutral base with amber/emerald accents */
+        --background: 0.98 0.005 60;
+        --foreground: 0.25 0.015 60;
+        
+        --card: 1 0 0;
+        --card-foreground: 0.25 0.015 60;
+        
+        --popover: 1 0 0;
+        --popover-foreground: 0.25 0.015 60;
+        
+        /* Amber primary for warmth and energy */
+        --primary: 0.65 0.15 65;
+        --primary-foreground: 0.98 0.005 60;
+        
+        /* Soft warm secondary */
+        --secondary: 0.95 0.01 60;
+        --secondary-foreground: 0.25 0.015 60;
+        
+        /* Muted warm tones */
+        --muted: 0.94 0.01 60;
+        --muted-foreground: 0.55 0.02 60;
+        
+        /* Emerald accent for science/nature theme */
+        --accent: 0.93 0.015 150;
+        --accent-foreground: 0.25 0.015 150;
+        
+        /* Warm destructive */
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.98 0.005 60;
+        
+        /* Subtle borders */
+        --border: 0.88 0.01 60;
+        --input: 0.88 0.01 60;
+        --ring: 0.65 0.15 65;
+        
+        /* Chart colors with warm/cool balance */
+        --chart-1: 0.65 0.15 65;
+        --chart-2: 0.60 0.12 150;
+        --chart-3: 0.55 0.18 35;
+        --chart-4: 0.70 0.10 200;
+        --chart-5: 0.50 0.20 15;
+    }
+
+    .dark {
+        /* Dark mode with warm undertones */
+        --background: 0.18 0.015 60;
+        --foreground: 0.95 0.01 60;
+        
+        --card: 0.22 0.015 60;
+        --card-foreground: 0.95 0.01 60;
+        
+        --popover: 0.20 0.015 60;
+        --popover-foreground: 0.95 0.01 60;
+        
+        /* Brighter amber for dark mode */
+        --primary: 0.75 0.18 65;
+        --primary-foreground: 0.18 0.015 60;
+        
+        --secondary: 0.28 0.02 60;
+        --secondary-foreground: 0.95 0.01 60;
+        
+        --muted: 0.28 0.02 60;
+        --muted-foreground: 0.65 0.02 60;
+        
+        --accent: 0.35 0.03 150;
+        --accent-foreground: 0.95 0.01 150;
+        
+        --destructive: 0.60 0.20 25;
+        --destructive-foreground: 0.95 0.01 60;
+        
+        --border: 0.30 0.02 60;
+        --input: 0.30 0.02 60;
+        --ring: 0.70 0.15 65;
+        
+        --chart-1: 0.70 0.18 65;
+        --chart-2: 0.65 0.15 150;
+        --chart-3: 0.60 0.20 35;
+        --chart-4: 0.75 0.12 200;
+        --chart-5: 0.55 0.22 15;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+    
+    /* Smooth scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    /* Enhanced typography */
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-bold tracking-tight;
+    }
+    
+    /* Prose improvements for content sections */
+    .prose {
+        @apply text-foreground;
+    }
+    
+    .prose h3 {
+        @apply text-foreground;
+    }
+    
+    .prose strong {
+        @apply text-foreground font-semibold;
+    }
+    
+    .prose a {
+        @apply text-amber-600 dark:text-amber-400 hover:underline;
+    }
+}

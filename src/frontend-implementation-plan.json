@@ -1,0 +1,187 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Science education site: Blue light and circadian rhythm",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Build a responsive, science-focused informational single-page website explaining blue light effects on circadian rhythm in clear English.",
+      "acceptanceCriteria": [
+        "The site loads without errors and renders correctly on mobile and desktop screen sizes.",
+        "All user-facing text is in English and focuses on the science of blue light and circadian rhythm."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "create",
+          "description": "Implement the main single-page layout with responsive structure, readable science-focused copy, and section anchors; compose shadcn-ui components (e.g., Card/Separator/Button) for consistent layout and callouts. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/SectionShell.tsx",
+          "operation": "create",
+          "description": "Create a reusable section wrapper component to standardize spacing, max-width, headings, and responsive layout across all content sections; compose shadcn-ui primitives where helpful. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/CalloutCard.tsx",
+          "operation": "create",
+          "description": "Add a reusable callout component for key definitions and takeaways (e.g., 'Key idea', 'Why it matters') using shadcn-ui Card styling for consistent presentation. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/main.tsx",
+          "operation": "modify",
+          "description": "Ensure the app bootstraps cleanly with the newly created App component and global styles import paths matching the project structure."
+        },
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Confirm document metadata remains appropriate (language already set to English) and align title/description-related head elements with the science information site."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Add six clearly labeled content sections covering definitions, circadian biology, mechanisms, evidence summary, practical strategies, and cautions/limitations with a visible disclaimer.",
+      "acceptanceCriteria": [
+        "All six content areas are present as clearly labeled sections on the site.",
+        "The content includes at least one short explanation of the biological pathway linking blue light exposure to melatonin/circadian phase effects.",
+        "A limitations/disclaimer section is present and clearly visible."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add the six required sections with clear headings and anchor IDs: (1) What is blue light, (2) Circadian rhythm & melatonin, (3) Mechanisms (ipRGCs/melanopsin + alerting effects), (4) Evidence summary, (5) Practical mitigation strategies, (6) Cautions/limitations + visible disclaimer text; include at least one concise biological pathway explanation in the mechanisms section."
+        },
+        {
+          "path": "frontend/src/content/blueLightCircadianContent.ts",
+          "operation": "create",
+          "description": "Centralize the English educational copy, section titles, and bullet lists so the page can render structured content consistently and avoid scattered hard-coded text."
+        },
+        {
+          "path": "frontend/src/components/DisclaimerBanner.tsx",
+          "operation": "create",
+          "description": "Create a prominent, reusable disclaimer component (not medical advice; individual differences; brightness/duration/timing considerations) and render it in the limitations/cautions area; use shadcn-ui Alert (or similar) if available. Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Display clear author credits attributing the site to both specified names exactly.",
+      "acceptanceCriteria": [
+        "The rendered site visibly credits both \"PushpakSaha\" and \"Md. Zawraiz Khan\" (spelled exactly) in a consistent location (e.g., footer and/or About section)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/SiteFooter.tsx",
+          "operation": "create",
+          "description": "Implement a footer with a consistent credit line that includes both author names exactly as provided: \"PushpakSaha\" and \"Md. Zawraiz Khan\"; compose shadcn-ui typography/layout primitives if appropriate. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the footer into the page so the author credits are visible on all screen sizes and remain in a consistent location."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Provide basic navigation to quickly reach each major section (single-page scroll-to navigation or small routes) without reload issues.",
+      "acceptanceCriteria": [
+        "Users can access each major section from a top navigation element.",
+        "Navigation works without full page reload errors."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/TopNav.tsx",
+          "operation": "create",
+          "description": "Create a top navigation bar with links that scroll to each major section anchor on the single page; implement responsive behavior (e.g., condensed menu on small screens) by composing shadcn-ui components (e.g., Button, Sheet/DropdownMenu if available). Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/useScrollToSection.ts",
+          "operation": "create",
+          "description": "Add a small hook/utility that performs accessible, smooth scroll-to-section behavior (including focus/offset handling for fixed nav) without triggering full page reloads."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire TopNav into the layout and ensure all major sections have stable IDs that match navigation targets."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Add a References section with a short, readable bibliography-style list of credible sources and avoid overly specific claims without context.",
+      "acceptanceCriteria": [
+        "A \"References\" (or equivalent) section exists and contains multiple credible sources.",
+        "The site avoids presenting overly specific numerical claims without citation context."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add a clearly labeled References section with multiple credible sources (e.g., review articles and academic/medical institutions) in a readable bibliography style; keep wording high-level and avoid precise numerical claims without citation context."
+        },
+        {
+          "path": "frontend/src/content/references.ts",
+          "operation": "create",
+          "description": "Store the references list (titles, organizations/journals, and optional links) as structured data to render consistently and support future edits without changing layout code."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Apply a coherent science-education visual theme (typography, spacing, components) consistently, avoiding a generic blue/purple look.",
+      "acceptanceCriteria": [
+        "The UI has a consistent, intentional visual style across navigation, headings, body text, and callouts.",
+        "The primary theme is not a generic blue/purple gradient look."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "create",
+          "description": "Define a cohesive global theme using CSS variables and Tailwind layers (typography, background, foreground, borders, callouts) with a non-blue/purple primary palette (e.g., warm neutrals + amber/green accents) and consistent spacing defaults."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Adjust theme tokens and typography defaults (via Tailwind + typography plugin) to match the chosen science-education look and ensure consistent headings/body/callouts across sections without relying on a blue/purple gradient aesthetic."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Apply consistent typography and layout classes (e.g., readable line length, section spacing, callout styles) to enforce the theme across nav, hero, sections, and footer; compose shadcn-ui components to match theme tokens. Verify the component's usage instructions before implementing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Include required static generated images under frontend/public/assets/generated and render them in relevant sections without using the backend.",
+      "acceptanceCriteria": [
+        "Generated images exist in frontend/public/assets/generated and are displayed on the site.",
+        "No backend endpoints are used to fetch or proxy these images."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/hero-blue-light.dim_1600x700.png",
+          "operation": "create",
+          "description": "Add the generated hero illustration asset at the specified path for use in the page hero section."
+        },
+        {
+          "path": "frontend/public/assets/generated/melatonin-pathway-infographic.dim_1400x900.png",
+          "operation": "create",
+          "description": "Add the generated infographic asset at the specified path for use in the mechanisms/biology section."
+        },
+        {
+          "path": "frontend/public/assets/generated/blue-light-icons-set.dim_512x512.png",
+          "operation": "create",
+          "description": "Add the generated icon set asset at the specified path for use in sources/strategies callouts or section headers."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Render the static assets from frontend/public/assets/generated/hero-blue-light.dim_1600x700.png, frontend/public/assets/generated/melatonin-pathway-infographic.dim_1400x900.png, and frontend/public/assets/generated/blue-light-icons-set.dim_512x512.png in the hero/mechanisms/strategy areas with accessible alt text and responsive sizing; ensure images are loaded as static frontend assets (no backend usage)."
+        }
+      ]
+    }
+  ]
+}
